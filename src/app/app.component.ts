@@ -5,6 +5,17 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+// export class AppComponent {
+//   title = 'event2';
+// }
+
 export class AppComponent {
-  title = 'event2';
+  title = 'Deventure Select';
+
+
+
+onActivate(event) {
+  window.scroll(0,0);
+  
+}
 }
