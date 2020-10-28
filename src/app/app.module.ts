@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -32,7 +33,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
    
   ],
   providers: [],

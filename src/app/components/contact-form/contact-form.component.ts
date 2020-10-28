@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+// import { ContactService } from 'src/app/services/contact.service';
 
-// import custom validator to validate that password and confirm password fields match
 import { MustMatch } from '../contact-form/mustMatch';
 
 @Component({
@@ -15,7 +15,9 @@ export class ContactFormComponent implements OnInit {
     submitted = false;
     phonePattern = "^((\\+91-?)|0)?[0-9]{10}$";
 
-    constructor(private formBuilder: FormBuilder) { }
+    constructor(private formBuilder: FormBuilder ,
+        // private contact: ContactService
+        ) { }
 
     ngOnInit() {
         this.submitForm = this.formBuilder.group({
@@ -40,7 +42,7 @@ export class ContactFormComponent implements OnInit {
     onSubmit() {
         this.submitted = true;
 
-        // stop here if form is invalid
+        
         if (this.submitForm.invalid) {
 
             return;
@@ -51,5 +53,19 @@ export class ContactFormComponent implements OnInit {
         this.submitForm.reset();
         this.submitted = false;
 
+        // console.log(FormData)
+    // this.contact.PostMessage(FormData)
+    //   .subscribe(response => {
+    //     location.href = 'https://mailthis.to/confirm'
+    //     console.log(response)
+    //   }, error => {
+    //     console.warn(error.responseText)
+    //     console.log({ error })
+    //   })
+
+
+        // this.submitForm.reset();
+        // this.submitted = false;
+  }
+
     }
-}
