@@ -1,32 +1,46 @@
-/* *{
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 
-
-
-.kenburns-top{
-    height: 90vh;
-    width: 100vw;
-    -webkit-animation:kenburns-top 5s ease-out both;
-    animation:kenburns-top 5s ease-out both
-}
-
- @-webkit-keyframes kenburns-top{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 16%;transform-origin:50% 16%}100%{-webkit-transform:scale(1.25) translateY(-15px);transform:scale(1.25) translateY(-15px);-webkit-transform-origin:top;transform-origin:top}}@keyframes kenburns-top{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 16%;transform-origin:50% 16%}100%{-webkit-transform:scale(1.25) translateY(-15px);transform:scale(1.25) translateY(-15px);-webkit-transform-origin:top;transform-origin:top}} */
-
- *{
+*{
     box-sizing: border-box;
     /* margin: 0%;
     padding: 0%; */
     overflow: hidden;
 }
 
-.cover{
+/* .cover{
     width: 100%;
     max-height: 90vh;
 }
+.containers {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centered {
+    height: 90vh;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+  } */
+
+
+
+.about{
+  /* font-family: 'Caveat', cursive; */
+  font-family: 'Cinzel', serif;
+
+}
+
+ 
+
 
 .written{
+    margin-top: 20px;
     display: flex;
   justify-content: space-around;
 }
@@ -37,8 +51,9 @@
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    /* word-wrap: break-word; */
-    
+    /* font-family: 'Courgette', cursive; */
+    /* font-family: 'Kalam', cursive; */
+  font-family: 'Cinzel', serif;    
   }
 
 .icon-details{
@@ -54,10 +69,7 @@
     margin-bottom: 4px;
 }
 
-/* #weddingImage {
-    filter: brightness(60%) blur(2px);
-    
-} */
+
 
   .bod {
     display: flex;
@@ -85,7 +97,7 @@
   @keyframes slide {
     33.3333333333% {
       font-size: 1.9rem;
-      letter-spacing: 5px;
+      letter-spacing: 15px;
     }
     to {
       font-size: 0;
@@ -94,6 +106,7 @@
   }
   .typing-slider {
     font-family: Consolas, monospace;
+    /* font-family: 'Courgette', cursive; */
     font-weight: bold;
     text-align: center;
     white-space: nowrap;
@@ -114,7 +127,7 @@
     right: 0;
     bottom: 0;
     border-left: 3px solid black;
-    background-color: #FFCC00;
+    background-color: #2b9eb3;
     animation: typing 5s infinite, cursor 1s infinite;
   }
   .typing-slider p:nth-child(1) {
@@ -142,15 +155,19 @@
 
   
 #carousel .carousel-item.boat {
-    background-image: url("https://picsum.photos/1200/600/?image=1083");
+    background-image: url("../../../assets/cover.jpg");
   }
   
   #carousel .carousel-item.sea {
-    background-image: url("https://picsum.photos/1200/600/?image=1050");
+    /* background-image: url("https://picsum.photos/1200/600/?image=1050"); */
+    background-image: url("../../../assets/cover.jpg");
+
   }
   
   #carousel .carousel-item.river {
-    background-image: url("https://picsum.photos/1200/600/?image=1015");
+    /* background-image: url("https://picsum.photos/1200/600/?image=1015"); */
+    background-image: url("../../../assets/cover.jpg");
+
   }
   
   #carousel .carousel-item {
@@ -215,3 +232,5 @@
     background-color: #1c8314;
     border-color: #40ba37;
   } 
+
+  

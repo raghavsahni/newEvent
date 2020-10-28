@@ -1,10 +1,16 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
 *{
     box-sizing: border-box;
     overflow: hidden;
     margin: 0%;
     padding:10px;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+
+}
+.row{
+    width: 100vw;
 }
 
 .padding-0{
@@ -15,4 +21,12 @@
 .jumbotron1{
     background-color:rgba(162, 168, 175, 0.116);
     border-radius: 5px;
+}
+
+.font{
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+
+
+
 }

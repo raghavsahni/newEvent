@@ -13,6 +13,7 @@ export class ContactFormComponent implements OnInit {
 
   submitForm: FormGroup;
     submitted = false;
+    showMsg: boolean = false;
     phonePattern = "^((\\+91-?)|0)?[0-9]{10}$";
 
     constructor(private formBuilder: FormBuilder ,
@@ -47,9 +48,9 @@ export class ContactFormComponent implements OnInit {
 
             return;
         }
-        
+        this.showMsg= true;
 
-        alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.submitForm.value))
+        // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.submitForm.value))
         this.submitForm.reset();
         this.submitted = false;
 
