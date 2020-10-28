@@ -9,114 +9,32 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<!-- <body class="mat-typography">
-  <app-root></app-root> -->
 
-  <!-- <body class="theme-primary">
-    <div id="loader"> -->
-      <!-- <style>
-        .application-loading-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-        }
-  
-        .application-loading-box {
-          width: 300px;
-          margin: 5px;
-          text-align: center;
-        }
-      </style>
-      <div class="application-loading-container">
-        <div class="application-loading-box"><h2 class="text-muted">Loading...</h2></div>
-      </div>
-    </div> -->
+<!-- <body>
+  <app-root></app-root>
+</body> -->
 
-<!-- 
+<body class="theme-primary">
+  <div id="loader">
     <style>
-      body {
-          overflow: hidden;
+      .application-loading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
       }
 
-      .preloader {
-          width: 100%;
-          height: 100%;
-          position: fixed;
-          top: 0;
-          left: 0;
-          background: white;
-          z-index: 99999999;
+      .application-loading-box {
+        width: 300px;
+        margin: 5px;
+        text-align: center;
       }
-
-      #preloader-logo {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin: auto;
-      }
-
-      .loading-msg {
-          width: 100%;
-          font-size: 0.75em;
-          color: #555;
-          position: absolute;
-          bottom: 10%;
-          left: 50%;
-          transform: translate(-50%, 50%);
-          text-align: center;
-      }
-
-      .spinner {
-          width: 80px;
-          height: 80px;
-          border: 2px solid #f3f3f3;
-          border-top: 3px solid #2489CE;
-          border-radius: 100%;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin: auto;
-          animation: spin 1s infinite ease;
-      }
-
-      @keyframes spin {
-          from {
-              transform: rotate(0deg);
-          }
-          to {
-              transform: rotate(360deg);
-          }
-      }
-
-      #loading-msg {
-          width: 100%;
-          position: absolute;
-          left: 0;
-          bottom: 25px;
-          text-align: center;
-          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-          color: #333;
-          font-size: 0.8em;
-      }
-
-      body {
-          overflow: hidden;
-      }
-  </style>
-
-  <div class="preloader" id="loader">
-      <div class="spinner"></div>
-      <span id="loading-msg"></span>
-  </div> -->
-  <body>
-  
-
-    <app-root></app-root>
+    </style>
+    <div class="application-loading-container">
+      <div class="application-loading-box"><h2 class="text-muted">Loading...</h2></div>
+    </div>
+  </div>
+  <app-root></app-root>
 </body>
 </html>
