@@ -2,14 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Event2</title>
+  <title>Deventure Select</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="mat-typography">
-  <app-root></app-root>
+<!-- <body class="mat-typography">
+  <app-root></app-root> -->
+
+  <body class="theme-primary">
+    <div id="loader">
+      <style>
+        .application-loading-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+  
+        .application-loading-box {
+          width: 300px;
+          margin: 5px;
+          text-align: center;
+        }
+      </style>
+      <div class="application-loading-container">
+        <div class="application-loading-box"><h2>Loading...</h2></div>
+      </div>
+    </div>
+    <app-root></app-root>
+  </body>
 </body>
 </html>

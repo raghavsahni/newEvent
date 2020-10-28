@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,13 @@ import { Component } from '@angular/core';
 //   title = 'event2';
 // }
 
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
+
+  constructor(private renderer: Renderer2) {}
+  ngAfterViewInit() {
+    let loader = this.renderer.selectRootElement('#loader');
+    this.renderer.setStyle(loader, 'display', 'none');
+  }
   title = 'Deventure Select';
 
 
