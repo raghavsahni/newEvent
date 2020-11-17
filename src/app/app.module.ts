@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+// import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -16,6 +16,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { RegisterComponent } from './components/register/register.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +30,17 @@ import { FooterComponent } from './components/footer/footer.component';
     PageNotFoundComponent,
     ContactFormComponent,
     RegisterComponent,
-    FooterComponent
+    FooterComponent,
+    FaqComponent,
+    PaymentComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    // HttpClientModule
    
   ],
   providers: [],

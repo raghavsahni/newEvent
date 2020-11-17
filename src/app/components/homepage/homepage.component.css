@@ -1,37 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 
 *{
     box-sizing: border-box;
-    /* margin: 0%;
-    padding: 0%; */
     overflow: hidden;
 }
 
-/* .cover{
-    width: 100%;
-    max-height: 90vh;
-}
-.containers {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  .centered {
-    height: 90vh;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-  } */
 
 
 
 .about{
-  /* font-family: 'Caveat', cursive; */
   font-family: 'Cinzel', serif;
 
 }
@@ -51,8 +30,7 @@
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    /* font-family: 'Courgette', cursive; */
-    /* font-family: 'Kalam', cursive; */
+    
   font-family: 'Cinzel', serif;    
   }
 
@@ -76,7 +54,6 @@
     justify-content: center;
     align-items: center;
     height: 30vh;
-    /* background-color: #FFCC00; */
   }
   @keyframes cursor {
     from, to {
@@ -106,7 +83,6 @@
   }
   .typing-slider {
     font-family: Consolas, monospace;
-    /* font-family: 'Courgette', cursive; */
     font-weight: bold;
     text-align: center;
     white-space: nowrap;
@@ -158,17 +134,6 @@
     background-image: url("../../../assets/cover.jpg");
   }
   
-  #carousel .carousel-item.sea {
-    /* background-image: url("https://picsum.photos/1200/600/?image=1050"); */
-    background-image: url("../../../assets/cover.jpg");
-
-  }
-  
-  #carousel .carousel-item.river {
-    /* background-image: url("https://picsum.photos/1200/600/?image=1015"); */
-    background-image: url("../../../assets/cover.jpg");
-
-  }
   
   #carousel .carousel-item {
     height: 100vh;
@@ -233,4 +198,234 @@
     border-color: #40ba37;
   } 
 
+   */
+
+
+
+
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  .bgImage{
+     max-height: 90vh;
+  }
+
+
+#img1 {
+    display: block;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+#img2 {
+    display: none;
+}
+
+#weddingImage {
+    filter: brightness(60%) blur(2px);
+    
+}
+
+#imageContainer {
+    position: relative;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Bungee Inline'; */
+  font-size: 50px;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgDiv {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: -9999;
+}
+
+
+.scroll {
+    font-family: 'Montserrat', sans-serif;
+    
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 50%;
+    
+    bottom: 1%;
+    letter-spacing: 2px;
+   
+}
+
+
+h1 {
+    position: relative;
+    color: rgba(0, 0, 0, .3);
+    font-size: 1em
+}
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 15em;
+    white-space: nowrap;
+    color: #fff;
+    animation: loading 3s linear;
+}
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+
+ @media screen and (max-width: 767px) {
+     #img1 {
+         display: block;
+     }
+     
+    .imgDiv {
+        
+        height: 50%;
+    }
+}
+ 
+@media only screen and (max-width: 600px) {
+    h1 {
+        position: relative;
+        color: rgba(0, 0, 0, .3);
+        font-size: .3em
+    }
+    h1:before {
+        content: attr(data-text);
+        position: absolute;
+        overflow: hidden;
+        max-width: 30em;
+        white-space: nowrap;
+        color: #fff;
+        animation: loading 3s linear;
+    }
+    @keyframes loading {
+        0% {
+            max-width: 0;
+        }
+
+    }
+
+    .centered {
+       
+      font-size: 20px;
+      
+    }
+    .scroll {
+        display: none;
+       
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    h1 {
+        position: relative;
+        color: rgba(0, 0, 0, .3);
+        font-size: .35em
+    }
+    h1:before {
+        content: attr(data-text);
+        position: absolute;
+        overflow: hidden;
+        max-width: 30em;
+        white-space: nowrap;
+        color: #fff;
+        animation: loading 3s linear;
+    }
+    @keyframes loading {
+        0% {
+            max-width: 0;
+        }
+
+    }
+
+    .centered {
+       
+      font-size: 25px;
+      
+    }
+    .scroll {
+        display: none;
+       
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    h1 {
+        position: relative;
+        color: rgba(0, 0, 0, .3);
+        font-size: .45em
+    }
+    h1:before {
+        content: attr(data-text);
+        position: absolute;
+        overflow: hidden;
+        max-width: 30em;
+        white-space: nowrap;
+        color: #fff;
+        animation: loading 3s linear;
+    }
+    @keyframes loading {
+        0% {
+            max-width: 0;
+        }
+
+    }
+    .centered {
+        
+      font-size: 35px;
+      
+    }
+    .scroll {
+        display: none;
+       
+    }
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    h1 {
+        position: relative;
+        color: rgba(0, 0, 0, .3);
+        font-size: .7em
+    }
+    h1:before {
+        content: attr(data-text);
+        position: absolute;
+        overflow: hidden;
+        max-width: 30em;
+        white-space: nowrap;
+        color: #fff;
+        animation: loading 3s linear;
+    }
+    @keyframes loading {
+        0% {
+            max-width: 0;
+        }
+
+    }
   
+} 
