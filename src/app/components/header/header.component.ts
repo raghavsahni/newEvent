@@ -7,10 +7,12 @@ import { Component, ComponentFactoryResolver, OnInit, ViewContainerRef } from '@
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( private viewContainerRef: ViewContainerRef, 
-    private cfr: ComponentFactoryResolver,) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-  
+  clickHandler(){
+    // window.location.href='https://rzp.io/l/DeventureRide';
+    (window as any).open('https://rzp.io/l/DeventureRide', "_blank");
+  }
 }
