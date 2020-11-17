@@ -12,10 +12,7 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  clickHandler(){
-    // window.location.href='https://rzp.io/l/DeventureRide';
-    (window as any).open('https://rzp.io/l/DeventureRide', "_blank");
-  }
+  
   payments(){
     this.router.navigate(["/payments"]);
 
