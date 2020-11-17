@@ -7,6 +7,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { RegisterComponent } from './components/register/register.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { PaymentComponent } from './components/payment/payment.component';
+import { ServicesComponent } from './components/services/services.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,9 @@ const routes: Routes = [
   {path : 'hustleRide' , component : RegisterComponent },
   {path : 'faq' , component : FaqComponent },
   {path : 'payments' , component : PaymentComponent },
+  {path : 'services' , component : ServicesComponent },
+
+
 
 
   {path: '', component: HomepageComponent},
