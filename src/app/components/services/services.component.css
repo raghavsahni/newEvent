@@ -60,6 +60,7 @@
 
   #weddingImage {
     padding: 0;
+    max-height: 90vh;
 
     
     filter: brightness(60%) blur(2px);
