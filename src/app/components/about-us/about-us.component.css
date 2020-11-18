@@ -10,8 +10,12 @@
   font-family: 'Cinzel', serif;
 
 }
-
-  
+.disp{
+  font-size: 2.3rem;;
+}
+  .size{
+    font-size: 2rem;
+  }
   .card:hover {
     /* transform: scale(1.03);  */
     background: rgba(212, 214, 219, 0.89);
