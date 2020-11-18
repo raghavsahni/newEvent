@@ -17,6 +17,10 @@
      max-height: 90vh;
   }
 .jumbotron{
+  /* height: 90vh; */
+  /* background-color: rgba(220, 225, 228, 0.226) */
+  background: #e3ece9;
+
 
 }
 
