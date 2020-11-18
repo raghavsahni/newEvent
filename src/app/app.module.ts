@@ -20,6 +20,7 @@ import { FaqComponent } from './components/faq/faq.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ParallaxComponent } from './components/parallax/parallax.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ServicesComponent } from './components/services/services.component';
     FaqComponent,
     PaymentComponent,
     TestimonialsComponent,
-    ServicesComponent
+    ServicesComponent,
+    ParallaxComponent
   ],
   imports: [
     BrowserModule,

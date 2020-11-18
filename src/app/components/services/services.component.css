@@ -80,9 +80,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Montserrat', sans-serif;
-  font-size: .8 rem;
+  font-size: .4 rem;
   color: white;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 
