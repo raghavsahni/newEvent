@@ -21,6 +21,7 @@ import { PaymentComponent } from './components/payment/payment.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ParallaxComponent } from './components/parallax/parallax.component';
+import { OurEventsComponent } from './components/our-events/our-events.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ParallaxComponent } from './components/parallax/parallax.component';
     PaymentComponent,
     TestimonialsComponent,
     ServicesComponent,
-    ParallaxComponent
+    ParallaxComponent,
+    OurEventsComponent,
   ],
   imports: [
     BrowserModule,
