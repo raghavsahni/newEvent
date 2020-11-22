@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-// import { ContactService } from 'src/app/services/contact.service';
+import { NodeMailerService } from 'src/app/services/node-mailer.service';
+
 
 import { MustMatch } from '../contact-form/mustMatch';
 
@@ -15,9 +16,10 @@ export class ContactFormComponent implements OnInit {
     submitted = false;
     showMsg: boolean = false;
     phonePattern = "^((\\+91-?)|0)?[0-9]{10}$";
+    // emailService: any;
 
     constructor(private formBuilder: FormBuilder ,
-        // private contact: ContactService
+        private emailService:NodeMailerService
         ) { }
 
     ngOnInit() {
@@ -51,22 +53,17 @@ export class ContactFormComponent implements OnInit {
         this.showMsg= true;
 
         // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.submitForm.value))
+        let email  = this.submitForm.value.email;
+    let reqObj = {
+      email:JSON.stringify(this.submitForm.value)
+    }
+    this.emailService.sendMessage(reqObj).subscribe(data=>{
+      console.log(data);
+    })
         this.submitForm.reset();
         this.submitted = false;
 
-        // console.log(FormData)
-    // this.contact.PostMessage(FormData)
-    //   .subscribe(response => {
-    //     location.href = 'https://mailthis.to/confirm'
-    //     console.log(response)
-    //   }, error => {
-    //     console.warn(error.responseText)
-    //     console.log({ error })
-    //   })
-
-
-        // this.submitForm.reset();
-        // this.submitted = false;
+      
   }
 
     }

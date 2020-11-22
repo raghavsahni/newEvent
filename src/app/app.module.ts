@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-// import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -48,7 +48,7 @@ import { ItineraryComponent } from './components/itinerary/itinerary.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    // HttpClientModule
+    HttpClientModule
    
   ],
   providers: [],
