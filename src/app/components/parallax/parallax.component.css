@@ -1,11 +1,17 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
 *{
     font-family: 'Cinzel', serif;
+
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
     overflow-y: hidden;
 
-}
 
+}
 body {
   margin: 0;
 }
@@ -62,7 +68,7 @@ body {
   z-index: 1;
   position: relative;
   background: #e3ece9;
-  color: white;
+  color: #3d7a66b7;
   font-size: 1.1rem;
   letter-spacing: 2px;
   line-height: 2em;
@@ -91,7 +97,7 @@ body {
     padding: 1.5rem 20px;
     font-size: 1rem;
     height: unset;
-    min-height: 100vh;
+    min-height: 40vh;
   }
   .season-desc .season-title {
     font-size: 2.5rem;

@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
 *{
     font-family: 'Cinzel', serif;
-    /* font-size: 20px; */
+    
 
+} */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+
+*{
+  font-family: 'Ubuntu', sans-serif;
 }
+
 
 .faq-section {
     background: #fdfdfd;
@@ -23,7 +29,7 @@
     left: 50%;
     width: 60px;
     height: 2px;
-    background: #E91E63;
+    background: #3d7a66b7;
     bottom: -25px;
     margin-left: -30px;
 }
@@ -33,7 +39,7 @@
 }
 
 .faq {
-  background: #FFFFFF;
+  background: #e3ece9;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   border-radius: 4px;
 }
@@ -55,7 +61,7 @@
 }
 
 .faq .card .card-header:hover {
-    background: rgba(233, 30, 99, 0.1);
+    background: #6f8f83c2;
     padding-left: 10px;
 }
 .faq .card .card-header .faq-title {
@@ -83,12 +89,12 @@
   width: 20px;
   height: 20px;
   line-height: 14px;
-  float: left;
+  /* float: left; */
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
   text-align: center;
-  background: #E91E63;
+  background:#3d7a66b7;
   color: #fff;
   font-size: 12px;
   margin-right: 20px;

@@ -22,6 +22,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { ServicesComponent } from './components/services/services.component';
 import { ParallaxComponent } from './components/parallax/parallax.component';
 import { OurEventsComponent } from './components/our-events/our-events.component';
+import { ItineraryComponent } from './components/itinerary/itinerary.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { OurEventsComponent } from './components/our-events/our-events.component
     ServicesComponent,
     ParallaxComponent,
     OurEventsComponent,
+    ItineraryComponent,
   ],
   imports: [
     BrowserModule,

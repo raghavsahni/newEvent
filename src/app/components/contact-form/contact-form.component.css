@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
 *{
-    font-family: 'Cinzel', serif;
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Ubuntu', sans-serif;
+
     font-size: 20px;
+    
+
 
 }
+
+
+.jumbotron{
+    background: #c9dad4;
+
+}
+
 
 

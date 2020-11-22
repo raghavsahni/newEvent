@@ -1,18 +1,20 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
-*{
-    font-family: 'Cinzel', serif;
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+ */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+
+.fontDesign{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* color:#3d7a66b7; */
+
+.small{
+    font-size:.8rem;
 
 }
 
-/* *{
-    overflow-x: hidden;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-
-} */
 .conatiner-fluid{
     box-sizing: border-box;
     padding: 0;
@@ -21,8 +23,8 @@
 
 }
 .deventure{
-    color: burlywood;
-    font-size: 1.5rem;
+    color: #3d7a66b7;
+   
 }
   .cover {
     
@@ -36,9 +38,7 @@
 
   .space{
     overflow-x: hidden;
-    /* margin-left: 10%; */
     text-align: center;
-    /* padding-left: 10%; */
 
   }
   .text {
@@ -46,6 +46,10 @@
     font-size: 0.8rem;
     overflow: hidden;
     
+  }
+  .size{
+      font-size: 1.7rem;
+      color:#3d7a66b7;
   }
   .texts {
     width: 75%;
@@ -54,8 +58,8 @@
     
   }
   .text {
-    width: 60%;
-    font-size: 0.8rem;
+    width: 70%;
+    font-size: 1rem;
     overflow: hidden;
     
   }
@@ -63,23 +67,17 @@
 
   #weddingImage {
     padding: 0;
-    max-height: 90vh;
-
-    
-    /* filter: brightness(60%) blur(2px); */
-    
-    
+    max-height: 90vh;    
 }
 
 #imageContainer {
     padding: 0;
-
     position: relative;
 }
 
 .centered {
-    position: absolute;
-    top: 50%;
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Montserrat', sans-serif;
@@ -91,7 +89,6 @@
 
 img {
     padding: 0;
-
     width: 100%;
     height: 100%;
 }
@@ -114,7 +111,6 @@ img {
 }
 .wsk-cp-product{
   background:#fff;
-  /* height: 100%; */
   padding:15px;
   border-radius:6px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -172,8 +168,11 @@ img {
 }
 .wsk-cp-text .category > span{
   padding: 12px 30px;
-  border: 1px solid #313131;
-  background:#212121;
+  /* border: 1px solid #3d7a66b7; */
+  border: 1px solid #6fa794;
+  /* background-color: #e3ece9; */
+  /* background:#212121; */
+  background:#6fa794;
   color:#fff;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   border-radius:27px;
@@ -181,7 +180,7 @@ img {
   
 }
 .wsk-cp-product:hover .wsk-cp-text .category > span{
-  border-color:#ddd;
+  border-color:#6fa794;
   box-shadow: none;
   padding: 11px 28px;
 }
