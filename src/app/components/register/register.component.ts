@@ -15,7 +15,7 @@ export class RegisterComponent implements OnInit {
   
   payments(){
     // this.router.navigate(["/payments"]);
-    (window as any).open('https://rzp.io/l/DeventureRide', "_blank");
+    (window as any).open('https://pages.razorpay.com/DeventureSelectHustleRide', "_blank");
 
 
   }

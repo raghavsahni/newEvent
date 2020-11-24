@@ -13,6 +13,6 @@ export class HeaderComponent implements OnInit {
   }
   clickHandler(){
     // window.location.href='https://rzp.io/l/DeventureRide';
-    (window as any).open('https://rzp.io/l/DeventureRide', "_blank");
+    (window as any).open('https://pages.razorpay.com/DeventureSelectHustleRide', "_blank");
   }
 }
