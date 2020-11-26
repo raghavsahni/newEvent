@@ -62,7 +62,9 @@ export class ContactFormComponent implements OnInit {
     })
         this.submitForm.reset();
         this.submitted = false;
-
+        // setTimeout(function(){ 
+        //     this.showMsg= false;
+        // }, 3000);
       
   }
 
